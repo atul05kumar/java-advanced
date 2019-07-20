@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.IntSummaryStatistics;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -75,6 +76,18 @@ public class StreamExamples {
                 .filter(x -> x.length == 3)
                 .count();
         System.out.println(recordsWithThreeNums);
+
+        /*Use of reduce terminal operation*/
+        double total = Stream.of(2.4, 6.7, 7.4)
+                .reduce(0.0, (Double a, Double b) -> a + b);
+        System.out.println(total);
+
+        /*Summary statistics terminal operation*/
+        IntSummaryStatistics summary = IntStream.of(23, 45, 67, 11, 44, 90, 22)
+                .summaryStatistics();
+        System.out.println(summary);
+        
+
 
 
 
