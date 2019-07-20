@@ -1,5 +1,6 @@
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
@@ -58,6 +59,23 @@ public class StreamExamples {
                 .filter(x -> x.length() > 4)
                 .map(x -> x + " ")
                 .forEach(System.out::print);
+        System.out.println();
+
+        /*Collect terminal operation*/
+        List <String> newPeople = people.stream()
+                .filter(x -> x.contains("u"))
+                .map(x -> x + " ")
+                .collect(Collectors.toList());
+        newPeople.forEach(x -> System.out.print(x));
+
+        /*More complex example*/
+        List<String> numbers = Arrays.asList("1,2,4", "3,5,7", "A", "7,3,9");
+        int recordsWithThreeNums = (int)numbers.stream()
+                .map(x -> x.split(","))
+                .filter(x -> x.length == 3)
+                .count();
+        System.out.println(recordsWithThreeNums);
+
 
 
     }
