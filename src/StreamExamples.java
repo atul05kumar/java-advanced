@@ -1,4 +1,5 @@
 import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 public class StreamExamples {
     public static void main(String[] args) {
@@ -23,6 +24,15 @@ public class StreamExamples {
                 .range(1,10)
                 .sum();
         System.out.println(sumOfOneToNine);
+
+        /*Using stream of*/
+        Stream.of("Verma", "Kumar", "Atul")
+                .sorted()
+                .findFirst()
+                .ifPresent(System.out::println);
+
+        
+
 
     }
 }
