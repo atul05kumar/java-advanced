@@ -86,7 +86,7 @@ public class StreamExamples {
         IntSummaryStatistics summary = IntStream.of(23, 45, 67, 11, 44, 90, 22)
                 .summaryStatistics();
         System.out.println(summary);
-        
+
 
 
 
