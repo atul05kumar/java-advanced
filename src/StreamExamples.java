@@ -5,8 +5,8 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
-public class StreamExamples {
-    public static void main(String[] args) {
+class StreamExamples {
+    public void streamDemo() {
         /*Invoking a function for each element of stream*/
         IntStream
                 .range(1, 10)
@@ -86,10 +86,6 @@ public class StreamExamples {
         IntSummaryStatistics summary = IntStream.of(23, 45, 67, 11, 44, 90, 22)
                 .summaryStatistics();
         System.out.println(summary);
-
-
-
-
 
     }
 }
