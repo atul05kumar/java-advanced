@@ -5,6 +5,9 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
+/**
+ * Class explaining stream API in java 8, contains example code snippets covering different functionality.
+ */
 class StreamExamples {
     public void streamDemo() {
         /*Invoking a function for each element of stream*/

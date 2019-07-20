@@ -1,6 +1,11 @@
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * Class explaining lambda expressions.
+ * Note : Lambda expressions only work with implementing interfaces with only only method.
+ * These interfaces are termed as functional interfaces.
+ */
 public class LamdaExamples{
     /*Normal Invocation using an implementation of interface written in a class*/
     public void normalInvocation() {
