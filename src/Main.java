@@ -14,7 +14,8 @@ public class Main {
         ConsumerExample consumerExample = new ConsumerExample();
         consumerExample.consumerDemo();
 
-
+        InterfacesExample interfacesExample = new InterfacesExample();
+        interfacesExample.InterfacesDemo();
 
     }
 }
