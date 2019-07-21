@@ -11,6 +11,9 @@ public class Main {
         lambda.lamdaWithMethodParmShortExpression();
         lambda.exampleLamdaInJava();
 
+        ConsumerExample consumerExample = new ConsumerExample();
+        consumerExample.consumerDemo();
+
 
 
     }
