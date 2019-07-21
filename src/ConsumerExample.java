@@ -17,6 +17,10 @@ public class ConsumerExample {
         System.out.println("\nConsumer example : ");
         Consumer<Integer> consumer = new ConsumerImpl();
         myList.forEach(consumer);
+
+        System.out.println("\nUsing lambda notation in forEach");
+        /*Using lambda notation*/
+        myList.forEach(i -> System.out.print(i + " "));
     }
 }
 
